@@ -2,6 +2,7 @@
 
 <ul>
   <% @ducks.each do |duck| %>
-    <li> <%= duck.name %> </li>
+    <li>Duck Name: <%= link_to duck.name, duck %><br>
+        Description: <%= duck.description %> </li>
   <% end %>
 </ul>
